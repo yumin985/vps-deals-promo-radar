@@ -1,19 +1,23 @@
 ILANG
 [TYPE:config][PROJECT:vps-deals][LANG:en-US]
 
+
 ::STATE{@SITE, brand:vps-deals, niche:VPS hosting offers, domain:https://vps-deals-eny.pages.dev, locale:en-US, scrape_interval:6h}
+
 
 ::MODULE{PROVIDERS|title:Public official VPS offer sources}
 # name | home_url | source_url | affiliate_url (blank means official link)
 Hostinger | https://www.hostinger.com/ | https://www.hostinger.com/vps-hosting |
-IONOS | https://www.ionos.com/ | https://www.ionos.com/servers/cheap-vps |
+IONOS CONFIG TEST | https://www.ionos.com/ | https://www.ionos.com/servers/cheap-vps |
 Contabo | https://contabo.com/en-us/ | https://contabo.com/en-us/pricing/ |
 Hetzner | https://www.hetzner.com/ | https://www.hetzner.com/cloud/cost-optimized/ |
 ::END
 
+
 ::MODULE{FIELDS|title:Offer fields}
 title price currency offer_url valid_until source_url fetched_at provider
 ::END
+
 
 ::RULE{price_missing⇒omit price and do not publish an Offer}
 ::RULE{valid_until_expired⇒mark expired or remove from active offers}
