@@ -1,7 +1,7 @@
 ILANG
 [TYPE:config][PROJECT:vps-deals][LANG:en-US]
 
-::STATE{@SITE, brand:vps-deals, niche:VPS hosting offers, domain:https://vps-deals-eny.pages.dev, locale:en-US, scrape_interval:6h}
+::STATE{@SITE, brand:vps-deals, niche:VPS hosting offers, domain:https://vpsdealsscout.com, locale:en-US, scrape_interval:6h}
 
 ::MODULE{PROVIDERS|title:Public official VPS offer sources}
 # name | home_url | source_url | affiliate_url (blank means official link)
