@@ -1,72 +1,20 @@
 {
-  "generated_at": "2026-09-26T12:09:07Z",
+  "generated_at": "2026-09-26T15:15:37Z",
   "offers": [
-    {
-      "provider": "Hostinger",
-      "title": "KVM 1",
-      "price": "6.49",
-      "currency": "USD",
-      "offer_url": "https://www.hostinger.com/vps-hosting",
-      "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-09-26T12:09:07Z",
-      "valid_until": "2027-09-25",
-      "availability": "InStock"
-    },
-    {
-      "provider": "Hostinger",
-      "title": "KVM 2",
-      "price": "8.99",
-      "currency": "USD",
-      "offer_url": "https://www.hostinger.com/vps-hosting",
-      "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-09-26T12:09:07Z",
-      "valid_until": "2027-09-25",
-      "availability": "InStock"
-    },
-    {
-      "provider": "Hostinger",
-      "title": "KVM 4",
-      "price": "12.99",
-      "currency": "USD",
-      "offer_url": "https://www.hostinger.com/vps-hosting",
-      "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-09-26T12:09:07Z",
-      "valid_until": "2027-09-25",
-      "availability": "InStock"
-    },
-    {
-      "provider": "Hostinger",
-      "title": "KVM 8",
-      "price": "25.99",
-      "currency": "USD",
-      "offer_url": "https://www.hostinger.com/vps-hosting",
-      "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-09-26T12:09:07Z",
-      "valid_until": "2027-09-25",
-      "availability": "InStock"
-    }
+    {"provider":"Hostinger","title":"KVM 1","price":"6.49","currency":"USD","offer_url":"https://www.hostinger.com/vps-hosting","source_url":"https://www.hostinger.com/vps-hosting","fetched_at":"2026-09-25T16:04:38Z","valid_until":"2027-09-25","availability":"InStock"},
+    {"provider":"Hostinger","title":"KVM 2","price":"8.99","currency":"USD","offer_url":"https://www.hostinger.com/vps-hosting","source_url":"https://www.hostinger.com/vps-hosting","fetched_at":"2026-09-25T16:04:38Z","valid_until":"2027-09-25","availability":"InStock"},
+    {"provider":"Hostinger","title":"KVM 4","price":"12.99","currency":"USD","offer_url":"https://www.hostinger.com/vps-hosting","source_url":"https://www.hostinger.com/vps-hosting","fetched_at":"2026-09-25T16:04:38Z","valid_until":"2027-09-25","availability":"InStock"},
+    {"provider":"Hostinger","title":"KVM 8","price":"25.99","currency":"USD","offer_url":"https://www.hostinger.com/vps-hosting","source_url":"https://www.hostinger.com/vps-hosting","fetched_at":"2026-09-25T16:04:38Z","valid_until":"2027-09-25","availability":"InStock"},
+    {"provider":"IONOS","title":"VPS S+ (3-month promotion)","price":"2","currency":"USD","offer_url":"https://www.ionos.com/servers/cheap-vps","source_url":"https://www.ionos.com/servers/cheap-vps","fetched_at":"2026-09-26T15:15:37Z","availability":"InStock"},
+    {"provider":"IONOS","title":"VPS M+ (3-month promotion)","price":"5","currency":"USD","offer_url":"https://www.ionos.com/servers/cheap-vps","source_url":"https://www.ionos.com/servers/cheap-vps","fetched_at":"2026-09-26T15:15:37Z","availability":"InStock"},
+    {"provider":"IONOS","title":"VPS L+ (3-month promotion)","price":"8","currency":"USD","offer_url":"https://www.ionos.com/servers/cheap-vps","source_url":"https://www.ionos.com/servers/cheap-vps","fetched_at":"2026-09-26T15:15:37Z","availability":"InStock"},
+    {"provider":"IONOS","title":"VPS XL+ (3-month promotion)","price":"14","currency":"USD","offer_url":"https://www.ionos.com/servers/cheap-vps","source_url":"https://www.ionos.com/servers/cheap-vps","fetched_at":"2026-09-26T15:15:37Z","availability":"InStock"},
+    {"provider":"IONOS","title":"VPS XXL+ (3-month promotion)","price":"20","currency":"USD","offer_url":"https://www.ionos.com/servers/cheap-vps","source_url":"https://www.ionos.com/servers/cheap-vps","fetched_at":"2026-09-26T15:15:37Z","availability":"InStock"}
   ],
   "sources": [
-    {
-      "provider": "Hostinger",
-      "status": "offers_found",
-      "fetched_at": "2026-09-26T12:09:07Z"
-    },
-    {
-      "provider": "IONOS",
-      "status": "no_structured_offers",
-      "fetched_at": "2026-09-26T12:09:07Z"
-    },
-    {
-      "provider": "Contabo",
-      "status": "skipped",
-      "detail": "HTTP Error 403: Forbidden",
-      "fetched_at": "2026-09-26T12:09:07Z"
-    },
-    {
-      "provider": "Hetzner",
-      "status": "no_structured_offers",
-      "fetched_at": "2026-09-26T12:09:07Z"
-    }
+    {"provider":"Hostinger","status":"offers_found","fetched_at":"2026-09-25T16:04:38Z"},
+    {"provider":"IONOS","status":"offers_found","detail":"Five VPS+ plans read from the public official page; promotional prices are for 3 months with a 1-year term.","fetched_at":"2026-09-26T15:15:37Z"},
+    {"provider":"Contabo","status":"skipped","detail":"Official pricing page returned a Security Check; no price was published.","fetched_at":"2026-09-26T15:15:37Z"},
+    {"provider":"Hetzner","status":"no_available_offers","detail":"Official page listed plans but marked each displayed plan currently unavailable.","fetched_at":"2026-09-26T15:15:37Z"}
   ]
 }

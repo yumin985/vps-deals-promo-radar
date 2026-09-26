@@ -48,6 +48,19 @@ class JsonLdParser(HTMLParser):
             self._in_jsonld = False
 
 
+class VisibleTextParser(HTMLParser):
+    """Collect visible text for official pages that do not publish JSON-LD offers."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.parts: list[str] = []
+
+    def handle_data(self, data: str) -> None:
+        text = " ".join(data.split())
+        if text:
+            self.parts.append(text)
+
+
 def read_config() -> tuple[dict[str, str], list[dict[str, str]]]:
     text = CONFIG.read_text(encoding="utf-8")
     state_match = re.search(r"::STATE\{@SITE,(.*?)\}", text, re.S)
@@ -178,6 +191,40 @@ def parse_jsonld(html: bytes, provider: dict[str, str], fetched_at: str) -> list
     return list(unique.values())
 
 
+def parse_visible_offers(html: bytes, provider: dict[str, str], fetched_at: str) -> list[dict[str, str]]:
+    """Parse only explicit plan/price text from known public official layouts.
+
+    This is intentionally narrow: it supports IONOS's public VPS+ cards, where
+    the page publishes no Offer JSON-LD. No value is inferred when the card
+    text or price is missing.
+    """
+    if provider["name"] != "IONOS":
+        return []
+    parser = VisibleTextParser()
+    parser.feed(html.decode("utf-8", errors="replace"))
+    text = " ".join(parser.parts)
+    results: list[dict[str, str]] = []
+    for plan in ("S+", "M+", "L+", "XL+", "XXL+"):
+        match = re.search(
+            rf"VPS\s+{re.escape(plan)}.*?\$\s*([0-9]+(?:\.[0-9]+)?)\s*/month\s+for\s+3\s+months",
+            text,
+            re.I,
+        )
+        if not match:
+            continue
+        results.append({
+            "provider": provider["name"],
+            "title": f"VPS {plan} (3-month promotion)",
+            "price": match.group(1),
+            "currency": "USD",
+            "offer_url": provider["source_url"],
+            "source_url": provider["source_url"],
+            "fetched_at": fetched_at,
+            "availability": "InStock",
+        })
+    return results
+
+
 def main() -> int:
     _, providers = read_config()
     fetched_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
@@ -187,7 +234,10 @@ def main() -> int:
         try:
             if not robots_allows(provider["source_url"]):
                 raise RuntimeError("robots.txt disallows the configured path; skipped")
-            records = parse_jsonld(fetch(provider["source_url"]), provider, fetched_at)
+            source_html = fetch(provider["source_url"])
+            records = parse_jsonld(source_html, provider, fetched_at)
+            if not records:
+                records = parse_visible_offers(source_html, provider, fetched_at)
             offers.extend(records)
             source_status.append({"provider": provider["name"], "status": "offers_found" if records else "no_structured_offers", "fetched_at": fetched_at})
             print(f"{provider['name']}: {len(records)} verifiable Offer record(s)")
