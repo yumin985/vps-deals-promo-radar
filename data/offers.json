@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T02:10:25Z",
+  "generated_at": "2026-09-26T02:26:57Z",
   "offers": [
     {
       "provider": "Hostinger",
@@ -8,7 +8,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-09-26T02:10:25Z",
+      "fetched_at": "2026-09-26T02:26:57Z",
       "valid_until": "2027-09-25",
       "availability": "InStock"
     },
@@ -19,7 +19,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-09-26T02:10:25Z",
+      "fetched_at": "2026-09-26T02:26:57Z",
       "valid_until": "2027-09-25",
       "availability": "InStock"
     },
@@ -30,7 +30,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-09-26T02:10:25Z",
+      "fetched_at": "2026-09-26T02:26:57Z",
       "valid_until": "2027-09-25",
       "availability": "InStock"
     },
@@ -41,7 +41,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-09-26T02:10:25Z",
+      "fetched_at": "2026-09-26T02:26:57Z",
       "valid_until": "2027-09-25",
       "availability": "InStock"
     }
@@ -50,23 +50,23 @@
     {
       "provider": "Hostinger",
       "status": "offers_found",
-      "fetched_at": "2026-09-26T02:10:25Z"
+      "fetched_at": "2026-09-26T02:26:57Z"
     },
     {
       "provider": "IONOS",
       "status": "no_structured_offers",
-      "fetched_at": "2026-09-26T02:10:25Z"
+      "fetched_at": "2026-09-26T02:26:57Z"
     },
     {
       "provider": "Contabo",
       "status": "skipped",
       "detail": "HTTP Error 403: Forbidden",
-      "fetched_at": "2026-09-26T02:10:25Z"
+      "fetched_at": "2026-09-26T02:26:57Z"
     },
     {
       "provider": "Hetzner",
       "status": "no_structured_offers",
-      "fetched_at": "2026-09-26T02:10:25Z"
+      "fetched_at": "2026-09-26T02:26:57Z"
     }
   ]
 }
