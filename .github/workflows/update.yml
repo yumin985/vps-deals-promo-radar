@@ -22,6 +22,8 @@ jobs:
         run: python -c "import zipfile; zipfile.ZipFile('project-source.zip').extractall('.')"
       - name: Collect public structured offers
         run: python scraper.py
+      - name: Set canonical domain
+        run: python -c "from pathlib import Path; p=Path('.ilang/site.ilang'); p.write_text(p.read_text().replace('https://vps-deals.pages.dev','https://vps-deals-eny.pages.dev'))"
       - name: Build static pages
         run: python build.py
       - name: Commit changed snapshot and site
