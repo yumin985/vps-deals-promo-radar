@@ -169,6 +169,15 @@ def main() -> int:
     index_values = {**common, "title": "VPS deals and plans | " + esc(config["brand"]), "canonical": esc(base + "/"), "description": "Compare verifiable VPS plans and offers from official provider pages.", "content": cards_html, "providers": "\n".join(provider_cards), "updated": latest_text, "schema": json_ld(item_list)}
     save("index.html", render_template("index.html", index_values), latest_source_date)
 
+    about_content = '<article class="detail-card"><p class="eyebrow">About</p><h1>About vps-deals</h1><p>vps-deals is an independent public-source tracker maintained by yuxunbin. It collects VPS plan and offer information from providers’ official public pages and links each listing back to its source.</p><p>We publish the source URL and the time each offer was checked. Prices, availability, and terms can change, so confirm the provider’s current terms before ordering.</p></article>'
+    save("about/index.html", render_template("info.html", {**common, "title": "About | " + esc(config["brand"]), "canonical": esc(base + "/about/"), "description": "About vps-deals and its public-source VPS offer tracking.", "content": about_content}))
+
+    privacy_content = '<article class="detail-card"><p class="eyebrow">Privacy</p><h1>Privacy</h1><p>vps-deals is a public information site. We use publicly available provider pages as sources for the VPS offers shown here and record source URLs and collection times.</p><p>This site may display third-party advertising and affiliate links. If you follow an affiliate link and make a purchase, we may receive a commission at no extra cost to you. Affiliate relationships do not change the prices shown by providers.</p><p>Third-party providers and advertising or affiliate platforms may process information according to their own privacy policies when you visit their sites. We do not ask you to submit payment details through vps-deals.</p></article>'
+    save("privacy/index.html", render_template("info.html", {**common, "title": "Privacy | " + esc(config["brand"]), "canonical": esc(base + "/privacy/"), "description": "Privacy information for vps-deals.", "content": privacy_content}))
+
+    contact_content = '<article class="detail-card"><p class="eyebrow">Contact</p><h1>Contact</h1><p>For questions about the site, sources, or a correction to an offer listing, email <a href="mailto:contact@vpsdealsscout.com">contact@vpsdealsscout.com</a>.</p></article>'
+    save("contact/index.html", render_template("info.html", {**common, "title": "Contact | " + esc(config["brand"]), "canonical": esc(base + "/contact/"), "description": "Contact vps-deals.", "content": contact_content}))
+
     compare_rows = []
     for offer in offers:
         compare_rows.append("<tr><td>" + esc(offer["provider"]) + "</td><td>" + esc(offer["title"]) + "</td><td>" + esc(format_price(str(offer["price"]), str(offer["currency"]))) + "</td><td><a href=\"" + esc(offer["offer_url"]) + "\" rel=\"nofollow noopener\">Official page ↗</a></td></tr>")
