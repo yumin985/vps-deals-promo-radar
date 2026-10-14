@@ -165,8 +165,9 @@ def main() -> int:
         for n in range(len(offers))
     ]}
     latest_text = esc(dataset.get("generated_at") or "No successful collection yet")
+    advertisement = '<a href="https://www.kqzyfj.com/click-101900543-13484397" target="_top" rel="sponsored noopener"><img src="https://www.awltovhc.com/image-101900543-13484397" width="250" height="360" alt="Contabo VPS offer" style="max-width:100%;height:auto"></a>'
     common = {"brand": esc(config["brand"]), "base": esc(base), "description": "Public VPS plan and offer data, linked to official provider sources.", "styles": "/styles.css"}
-    index_values = {**common, "title": "VPS deals and plans | " + esc(config["brand"]), "canonical": esc(base + "/"), "description": "Compare verifiable VPS plans and offers from official provider pages.", "content": cards_html, "providers": "\n".join(provider_cards), "updated": latest_text, "schema": json_ld(item_list)}
+    index_values = {**common, "title": "VPS deals and plans | " + esc(config["brand"]), "canonical": esc(base + "/"), "description": "Compare verifiable VPS plans and offers from official provider pages.", "content": cards_html, "providers": "\n".join(provider_cards), "updated": latest_text, "advertisement": advertisement, "schema": json_ld(item_list)}
     save("index.html", render_template("index.html", index_values), latest_source_date)
 
     about_content = '<article class="detail-card"><p class="eyebrow">About</p><h1>About vpsdealscout</h1><p>vpsdealscout is independently operated by its publisher as an editorial resource for readers comparing VPS offers and public pricing pages.</p><p>We review publicly available provider pages, link to the original source, and update records when a source changes. We do not sell hosting services directly.</p><p>For corrections, partnership inquiries, or privacy questions, contact contact@vpsdealscout.com.</p></article>'
