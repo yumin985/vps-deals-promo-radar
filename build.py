@@ -221,6 +221,7 @@ def main() -> int:
     save("styles.css", (ROOT / "templates" / "styles.css").read_text(encoding="utf-8"))
     content_root = ROOT / "content"
     if content_root.exists():
+        disclosure = "This site contains affiliate links. We may earn a commission if you purchase through them, at no extra cost to you."
         for source in sorted(content_root.rglob("*")):
             if not source.is_file():
                 continue
