@@ -219,6 +219,18 @@ def main() -> int:
         save(relative, render_template("deal.html", {**common, "title": str(offer["title"]) + " | " + esc(config["brand"]), "canonical": esc(canonical), "description": str(offer["provider"]) + " VPS price: " + format_price(str(offer["price"]), str(offer["currency"])) + ". View source and check time.", "content": offer_content, "schema": json_ld(offer_schema)}), iso_date(str(offer["fetched_at"])))
 
     save("styles.css", (ROOT / "templates" / "styles.css").read_text(encoding="utf-8"))
+    content_root = ROOT / "content"
+    if content_root.exists():
+        for source in sorted(content_root.rglob("*")):
+            if not source.is_file():
+                continue
+            relative = source.relative_to(content_root).as_posix()
+            if source.suffix == ".html":
+                save(relative, Template(source.read_text(encoding="utf-8")).substitute(brand=esc(config["brand"]), base=esc(base), disclosure=esc(disclosure), checked=latest_source_date or "No successful collection yet"), latest_source_date)
+            else:
+                target = OUT / relative
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(source, target)
     sitemap_items = []
     for relative, lastmod in routes:
         if not relative.endswith(".html"):
