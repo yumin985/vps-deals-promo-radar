@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parent
@@ -107,6 +107,7 @@ def robots_allows(url: str) -> bool:
         rules = fetch(robots_url).decode("utf-8", errors="replace")
     except (HTTPError, URLError, TimeoutError, OSError, ValueError) as exc:
         raise RuntimeError(f"Could not verify robots.txt ({type(exc).__name__}); skipped") from exc
+    groups = []
     active_agents: list[str] = []
     directives: list[tuple[str, str]] = []
     for raw in rules.splitlines():
@@ -117,17 +118,39 @@ def robots_allows(url: str) -> bool:
         key = key.lower()
         if key == "user-agent":
             if directives:
+                groups.append((active_agents, directives))
                 active_agents = []
                 directives = []
             active_agents.append(value.lower())
-        elif key in {"allow", "disallow"} and active_agents:
+        elif key in {"allow", "disallow", "crawl-delay", "request-rate"} and active_agents:
             directives.append((key, value))
-    matching = [rule for agent in active_agents if agent in {"*", USER_AGENT.lower()} for rule in directives]
-    # Most servers use User-agent: *; evaluate longest matching path rule.
+    groups.append((active_agents, directives))
+    token = USER_AGENT.split("/", 1)[0].lower()
+    specific = [(agents, rules) for agents, rules in groups if any(a != "*" and a in token for a in agents)]
+    selected = specific or [(agents, rules) for agents, rules in groups if "*" in agents]
+    matching = [rule for _, rules in selected for rule in rules]
     if not matching:
         return True
-    path = parsed.path or "/"
-    applicable = [(len(rule), action) for action, rule in matching if rule and path.startswith(rule)]
+    path = unquote(parsed.path or "/") + ("?" + parsed.query if parsed.query else "")
+    applicable = []
+    for action, rule in matching:
+        if action == "request-rate":
+            raise RuntimeError("robots.txt request-rate requires manual review; skipped")
+        if action == "crawl-delay":
+            try:
+                delay = float(rule)
+                if not 0 <= delay <= 60:
+                    raise ValueError()
+            except ValueError:
+                raise RuntimeError("Unsupported robots.txt crawl-delay; skipped")
+            time.sleep(delay)
+            continue
+        if not rule:
+            continue
+        terminal = rule.endswith("$")
+        pattern = re.escape(unquote(rule[:-1] if terminal else rule)).replace(r"\*", ".*")
+        if re.match(pattern + ("$" if terminal else ""), path):
+            applicable.append((len(rule.replace("*", "").rstrip("$")), action))
     if not applicable:
         return True
     longest = max(length for length, _ in applicable)
@@ -170,9 +193,6 @@ def parse_jsonld(html: bytes, provider: dict[str, str], fetched_at: str) -> list
                 expiry = node.get("priceValidUntil") or node.get("validThrough")
                 if isinstance(expiry, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", expiry):
                     offer["valid_until"] = expiry
-                availability = node.get("availability")
-                if isinstance(availability, str) and availability.startswith("https://schema.org/"):
-                    offer["availability"] = availability.rsplit("/", 1)[-1]
                 results.append(offer)
         for key, value in node.items():
             if key in {"offers", "itemOffered", "hasOfferCatalog", "@graph", "mainEntity", "mainEntityOfPage"}:
@@ -206,7 +226,7 @@ def parse_visible_offers(html: bytes, provider: dict[str, str], fetched_at: str)
     results: list[dict[str, str]] = []
     for plan in ("S+", "M+", "L+", "XL+", "XXL+"):
         match = re.search(
-            rf"VPS\s+{re.escape(plan)}.*?\$\s*([0-9]+(?:\.[0-9]+)?)\s*/month\s+for\s+3\s+months",
+            rf"VPS\s+{re.escape(plan)}(?=\s)(?:(?!VPS\s+(?:S|M|L|XL|XXL)\+).)*?\$\s*([0-9]+(?:\.[0-9]+)?)\s*/month\s+for\s+3\s+months",
             text,
             re.I,
         )
@@ -220,7 +240,6 @@ def parse_visible_offers(html: bytes, provider: dict[str, str], fetched_at: str)
             "offer_url": provider["source_url"],
             "source_url": provider["source_url"],
             "fetched_at": fetched_at,
-            "availability": "InStock",
         })
     return results
 
