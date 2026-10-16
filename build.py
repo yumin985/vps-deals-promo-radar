@@ -165,15 +165,18 @@ def main() -> int:
         for n in range(len(offers))
     ]}
     latest_text = esc(dataset.get("generated_at") or "No successful collection yet")
-    advertisement = '<a href="https://www.kqzyfj.com/click-101900543-13484397" target="_top" rel="sponsored noopener"><img src="https://www.awltovhc.com/image-101900543-13484397" width="250" height="360" alt="Contabo VPS offer" style="max-width:100%;height:auto"></a>'
-    common = {"brand": esc(config["brand"]), "base": esc(base), "description": "Public VPS plan and offer data, linked to official provider sources.", "styles": "/styles.css"}
-    index_values = {**common, "title": "VPS deals and plans | " + esc(config["brand"]), "canonical": esc(base + "/"), "description": "Compare verifiable VPS plans and offers from official provider pages.", "content": cards_html, "providers": "\n".join(provider_cards), "updated": latest_text, "advertisement": advertisement, "schema": json_ld(item_list)}
+    disclosure = "This site may display third-party advertising and affiliate links. If you follow an affiliate link and make a purchase, we may receive a commission at no extra cost to you."
+    common = {"brand": esc(config["brand"]), "base": esc(base), "description": "Public VPS plan and offer data, linked to official provider sources.", "styles": "/styles.css", "disclosure": esc(disclosure)}
+    index_values = {**common, "title": "VPS deals and plans | " + esc(config["brand"]), "canonical": esc(base + "/"), "description": "Compare verifiable VPS plans and offers from official provider pages.", "content": cards_html, "providers": "\n".join(provider_cards), "updated": latest_text, "schema": json_ld(item_list)}
     save("index.html", render_template("index.html", index_values), latest_source_date)
 
-    about_content = '<article class="detail-card"><p class="eyebrow">About</p><h1>About vpsdealscout</h1><p>vpsdealscout is independently operated by its publisher as an editorial resource for readers comparing VPS offers and public pricing pages.</p><p>We review publicly available provider pages, link to the original source, and update records when a source changes. We do not sell hosting services directly.</p><p>For corrections, partnership inquiries, or privacy questions, contact contact@vpsdealscout.com.</p></article>'
+    about_content = '<article class="detail-card"><p class="eyebrow">About</p><h1>About vpsdealscout</h1><p>vpsdealscout is an independent public-source tracker maintained by Yuxunbin (Xunbin Yu). It collects VPS plan and offer information from providers’ official public pages and links each listing back to its source.</p><p>We publish the source URL and the time each offer was checked. Prices, availability, and terms can change, so confirm the provider’s current terms before ordering.</p></article>'
     save("about/index.html", render_template("info.html", {**common, "title": "About | " + esc(config["brand"]), "canonical": esc(base + "/about/"), "description": "About vps-deals and its public-source VPS offer tracking.", "content": about_content}))
 
     privacy_content = '<article class="detail-card"><p class="eyebrow">Privacy</p><h1>Privacy</h1><p>vps-deals is a public information site. We use publicly available provider pages as sources for the VPS offers shown here and record source URLs and collection times.</p><p>This site may display third-party advertising and affiliate links. If you follow an affiliate link and make a purchase, we may receive a commission at no extra cost to you. Affiliate relationships do not change the prices shown by providers.</p><p>Third-party providers and advertising or affiliate platforms may process information according to their own privacy policies when you visit their sites. We do not ask you to submit payment details through vps-deals.</p></article>'
+    # Keep the privacy page explicit about the site's advertising and affiliate-link use.
+    # The footer disclosure may describe the currently configured provider URLs, but it must
+    # not erase this policy statement when the provider list has no affiliate URL yet.
     save("privacy/index.html", render_template("info.html", {**common, "title": "Privacy | " + esc(config["brand"]), "canonical": esc(base + "/privacy/"), "description": "Privacy information for vps-deals.", "content": privacy_content}))
 
     contact_content = '<article class="detail-card"><p class="eyebrow">Contact</p><h1>Contact</h1><p>For questions about the site, sources, or a correction to an offer listing, email <a href="mailto:contact@vpsdealsscout.com">contact@vpsdealsscout.com</a>.</p></article>'
@@ -219,15 +222,15 @@ def main() -> int:
         save(relative, render_template("deal.html", {**common, "title": str(offer["title"]) + " | " + esc(config["brand"]), "canonical": esc(canonical), "description": str(offer["provider"]) + " VPS price: " + format_price(str(offer["price"]), str(offer["currency"])) + ". View source and check time.", "content": offer_content, "schema": json_ld(offer_schema)}), iso_date(str(offer["fetched_at"])))
 
     save("styles.css", (ROOT / "templates" / "styles.css").read_text(encoding="utf-8"))
+    # Editorial sources live outside generated output so scheduled builds retain them.
     content_root = ROOT / "content"
     if content_root.exists():
-        disclosure = "This site contains affiliate links. We may earn a commission if you purchase through them, at no extra cost to you."
         for source in sorted(content_root.rglob("*")):
             if not source.is_file():
                 continue
             relative = source.relative_to(content_root).as_posix()
             if source.suffix == ".html":
-                save(relative, Template(source.read_text(encoding="utf-8")).substitute(brand=esc(config["brand"]), base=esc(base), disclosure=esc(disclosure), checked=latest_source_date or "No successful collection yet"), latest_source_date)
+                save(relative, Template(source.read_text(encoding="utf-8")).substitute(brand=esc(config["brand"]), base=esc(base), disclosure=esc(disclosure), checked=latest_text))
             else:
                 target = OUT / relative
                 target.parent.mkdir(parents=True, exist_ok=True)
