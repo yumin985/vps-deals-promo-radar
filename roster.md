@@ -12,3 +12,10 @@
 - Google official keyword data: empty; no connected official dataset and no estimate made.
 - Tomorrow's article material: explicit checkout billing wording, official source URL, fetched_at timestamp, and unknown-field rule.
 
+
+## Locked competitors from Google (2026-10-18)
+- rafftechnologies.com
+- hostadvice.com
+- omidsaffari.com
+
+The lock is based on the top three organic domains for the query `vps deals renewal pricing billing terms` checked 2026-10-18. T2 read Raff Technologies and recorded structure, angle, and our gap in reports/2026-10-18-competitor.md; no text was copied.
