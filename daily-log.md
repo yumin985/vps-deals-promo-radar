@@ -37,3 +37,4 @@
 
 
 
+2026-10-18 | Owner decision for the first 28-day cycle: close the affiliate outreach line. Main KPI is index count growth; keep the locked core terms and three locked competitors unchanged for 28 days. Structure, layout, and internal links may be improved with rollback available. When the first advertiser is approved, attach code the same day and verify actual ad rendering on the public page.
