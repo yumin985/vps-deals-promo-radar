@@ -13,9 +13,9 @@
 - Tomorrow's article material: explicit checkout billing wording, official source URL, fetched_at timestamp, and unknown-field rule.
 
 
-## Locked competitors from Google (2026-10-18)
-- rafftechnologies.com
-- hostadvice.com
-- omidsaffari.com
+## Locked competitors from Google (2026-10-18, replaced)
+- bearhost.com
+- toolrelief.com
+- lumafare.com
 
-The lock is based on the top three organic domains for the query `vps deals renewal pricing billing terms` checked 2026-10-18. T2 read Raff Technologies and recorded structure, angle, and our gap in reports/2026-10-18-competitor.md; no text was copied.
+The previous lock was discarded after review: HostAdvice is a broad high-authority web-hosting publisher, Raff Technologies was not a reliable fetch target for this task, and Omid Saffari ranked for a different topic. The replacement lock uses the first-page query `"VPS deal" renewal pricing checkout`; each selected page opened and directly answers promotional VPS pricing, checkout totals, or renewal wording. Giant domains, blocked pages, and off-topic pages were excluded. T2 notes are in reports/2026-10-18-competitor.md.
