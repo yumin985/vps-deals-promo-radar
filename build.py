@@ -20,6 +20,7 @@ CONFIG = ROOT / ".ilang" / "site.ilang"
 DATA = ROOT / "data" / "offers.json"
 TEMPLATES = ROOT / "templates"
 OUT = ROOT / "site"
+CANONICAL_DOMAIN = "https://vpsdealsscout.com"
 
 
 def read_config() -> tuple[dict[str, str], list[dict[str, str]]]:
@@ -112,6 +113,8 @@ def main() -> int:
     base = config["domain"].rstrip("/")
     if not base.startswith("https://"):
         raise ValueError("Canonical domain must be an https URL")
+    if base != CANONICAL_DOMAIN:
+        raise ValueError(f"Canonical domain must remain {CANONICAL_DOMAIN}; refusing to build another host")
     dataset = json.loads(DATA.read_text(encoding="utf-8")) if DATA.exists() else {"offers": [], "sources": [], "generated_at": ""}
     provider_names = {item["name"] for item in providers}
     offers = [item for item in dataset.get("offers", []) if item.get("provider") in provider_names and active_offer(item)]
