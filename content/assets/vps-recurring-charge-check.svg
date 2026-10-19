@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Recurring VPS charge evidence checklist</title>
+  <desc id="desc">A source-first checklist connecting a promotional first term to an explicitly published recurring charge.</desc>
+  <rect width="1200" height="630" rx="28" fill="#102a43"/>
+  <rect x="70" y="70" width="1060" height="490" rx="22" fill="#f0f4f8"/>
+  <text x="120" y="150" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#102a43">VPS DEALS / RECURRING CHARGE</text>
+  <text x="120" y="205" font-family="Arial, sans-serif" font-size="25" fill="#486581">Match the first term to the bill you will actually renew.</text>
+  <g font-family="Arial, sans-serif" font-size="27" fill="#102a43">
+    <rect x="120" y="260" width="420" height="190" rx="16" fill="#d9e2ec"/>
+    <text x="155" y="315" font-weight="700">1. First term</text><text x="155" y="360">Plan · currency · period</text><text x="155" y="405">Official source + timestamp</text>
+    <path d="M570 355h60" stroke="#2f80ed" stroke-width="8"/><path d="m620 330 30 25-30 25" fill="none" stroke="#2f80ed" stroke-width="8"/>
+    <rect x="680" y="260" width="380" height="190" rx="16" fill="#bee3f8"/>
+    <text x="715" y="315" font-weight="700">2. Renewal</text><text x="715" y="360">“Renews at” amount</text><text x="715" y="405">If absent: unknown</text>
+  </g>
+  <text x="120" y="510" font-family="Arial, sans-serif" font-size="24" fill="#334e68">Do not infer a recurring price from a discount percentage.</text>
+</svg>

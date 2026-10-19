@@ -8,3 +8,6 @@
 
 
 footer span{overflow-wrap:anywhere}
+
+@media(max-width:600px){.detail-card--wide{margin:16px 0;padding:18px}.detail-card--wide .guide-hero{margin:14px 0 22px}}
+
