@@ -1,5 +1,4 @@
-  "generated_at": "2026-10-20T03:16:10Z",  "offers": [
-    {
+  "generated_at": "2026-10-20T03:16:10Z",  "offers": [    {
       "provider": "Hostinger",
       "title": "KVM 1",
       "price": "6.49",
@@ -7,11 +6,16 @@
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z",
 =======
       "fetched_at": "2026-10-19T22:09:29Z",
 >>>>>>> origin/main
       "valid_until": "2027-10-19"
+=======
+      "fetched_at": "2026-10-20T11:11:44Z",
+      "valid_until": "2027-10-20"
+>>>>>>> origin/main
     },
     {
       "provider": "Hostinger",
@@ -21,11 +25,16 @@
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z",
 =======
       "fetched_at": "2026-10-19T22:09:29Z",
 >>>>>>> origin/main
       "valid_until": "2027-10-19"
+=======
+      "fetched_at": "2026-10-20T11:11:44Z",
+      "valid_until": "2027-10-20"
+>>>>>>> origin/main
     },
     {
       "provider": "Hostinger",
@@ -35,11 +44,16 @@
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z",
 =======
       "fetched_at": "2026-10-19T22:09:29Z",
 >>>>>>> origin/main
       "valid_until": "2027-10-19"
+=======
+      "fetched_at": "2026-10-20T11:11:44Z",
+      "valid_until": "2027-10-20"
+>>>>>>> origin/main
     },
     {
       "provider": "Hostinger",
@@ -49,11 +63,16 @@
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z",
 =======
       "fetched_at": "2026-10-19T22:09:29Z",
 >>>>>>> origin/main
       "valid_until": "2027-10-19"
+=======
+      "fetched_at": "2026-10-20T11:11:44Z",
+      "valid_until": "2027-10-20"
+>>>>>>> origin/main
     },
     {
       "provider": "IONOS",
@@ -63,9 +82,13 @@
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
 =======
       "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
+=======
+      "fetched_at": "2026-10-20T11:11:44Z"
 >>>>>>> origin/main
     },
     {
@@ -76,9 +99,13 @@
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
 =======
       "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
+=======
+      "fetched_at": "2026-10-20T11:11:44Z"
 >>>>>>> origin/main
     },
     {
@@ -89,9 +116,13 @@
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
 =======
       "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
+=======
+      "fetched_at": "2026-10-20T11:11:44Z"
 >>>>>>> origin/main
     },
     {
@@ -102,9 +133,13 @@
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
 =======
       "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
+=======
+      "fetched_at": "2026-10-20T11:11:44Z"
 >>>>>>> origin/main
     },
     {
@@ -115,9 +150,13 @@
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
 =======
       "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
+=======
+      "fetched_at": "2026-10-20T11:11:44Z"
 >>>>>>> origin/main
     }
   ],
@@ -126,18 +165,26 @@
       "provider": "Hostinger",
       "status": "offers_found",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
 =======
       "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
+=======
+      "fetched_at": "2026-10-20T11:11:44Z"
 >>>>>>> origin/main
     },
     {
       "provider": "IONOS",
       "status": "offers_found",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
 =======
       "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
+=======
+      "fetched_at": "2026-10-20T11:11:44Z"
 >>>>>>> origin/main
     },
     {
@@ -145,18 +192,26 @@
       "status": "skipped",
       "detail": "HTTP Error 403: Forbidden",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
 =======
       "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
+=======
+      "fetched_at": "2026-10-20T11:11:44Z"
 >>>>>>> origin/main
     },
     {
       "provider": "Hetzner",
       "status": "no_structured_offers",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
 =======
       "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
+=======
+      "fetched_at": "2026-10-20T11:11:44Z"
 >>>>>>> origin/main
     }
   ]
