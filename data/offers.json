@@ -1,6 +1,4 @@
-{
-  "generated_at": "2026-10-20T03:16:10Z",
-  "offers": [
+  "generated_at": "2026-10-20T03:16:10Z",  "offers": [
     {
       "provider": "Hostinger",
       "title": "KVM 1",
@@ -8,7 +6,11 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z",
+=======
+      "fetched_at": "2026-10-19T22:09:29Z",
+>>>>>>> origin/main
       "valid_until": "2027-10-19"
     },
     {
@@ -18,7 +20,11 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z",
+=======
+      "fetched_at": "2026-10-19T22:09:29Z",
+>>>>>>> origin/main
       "valid_until": "2027-10-19"
     },
     {
@@ -28,7 +34,11 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z",
+=======
+      "fetched_at": "2026-10-19T22:09:29Z",
+>>>>>>> origin/main
       "valid_until": "2027-10-19"
     },
     {
@@ -38,7 +48,11 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z",
+=======
+      "fetched_at": "2026-10-19T22:09:29Z",
+>>>>>>> origin/main
       "valid_until": "2027-10-19"
     },
     {
@@ -48,7 +62,11 @@
       "currency": "USD",
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
+=======
+      "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
     },
     {
       "provider": "IONOS",
@@ -57,7 +75,11 @@
       "currency": "USD",
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
+=======
+      "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
     },
     {
       "provider": "IONOS",
@@ -66,7 +88,11 @@
       "currency": "USD",
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
+=======
+      "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
     },
     {
       "provider": "IONOS",
@@ -75,7 +101,11 @@
       "currency": "USD",
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
+=======
+      "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
     },
     {
       "provider": "IONOS",
@@ -84,30 +114,50 @@
       "currency": "USD",
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
+=======
+      "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
     }
   ],
   "sources": [
     {
       "provider": "Hostinger",
       "status": "offers_found",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
+=======
+      "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
     },
     {
       "provider": "IONOS",
       "status": "offers_found",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
+=======
+      "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
     },
     {
       "provider": "Contabo",
       "status": "skipped",
       "detail": "HTTP Error 403: Forbidden",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
+=======
+      "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
     },
     {
       "provider": "Hetzner",
       "status": "no_structured_offers",
+<<<<<<< HEAD
       "fetched_at": "2026-10-20T03:16:10Z"
+=======
+      "fetched_at": "2026-10-19T22:09:29Z"
+>>>>>>> origin/main
     }
   ]
 }
