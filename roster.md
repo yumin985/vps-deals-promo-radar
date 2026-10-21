@@ -18,6 +18,12 @@
 - Today's article material: official Hostinger and IONOS wording that separates display rate, upfront payment term, promotion duration, and renewal amount.
 - Tomorrow's material: checkout wording that distinguishes display rate, payment term, promotion duration, and renewal sentence.
 
+## 2026-10-21 shift materials
+- Archived today's source notes in `reports/2026-10-21-materials.md` and reviewed the locked peer in `reports/2026-10-21-competitor.md`.
+- Google official keyword data: empty; no estimate made.
+- Today's article material: official checkout wording that separates display rate, upfront total, payment term, promotion duration, and recurring amount.
+- Tomorrow's material: checkout wording for taxes/fees and the final amount due, with source URL, fetched_at, and the unknown-field rule.
+
 ## Locked competitor from Google (2026-10-18, final)
 - toolrelief.com
 
