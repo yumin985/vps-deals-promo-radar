@@ -28,3 +28,8 @@
 - toolrelief.com
 
 The owner locked ToolRelief as the single direct peer. No fourth competitor will be added until the owner changes this lock.
+## 2026-10-24 shift materials
+- Archived today's source and competitor notes in reports/2026-10-24-materials.md and reports/2026-10-24-competitor.md.
+- Google official keyword data: empty; no estimate made.
+- Today's article material: Hostinger upfront-billing wording; IONOS promotion, one-year term, and sales-tax notice; source URLs and fetched_at 2026-10-24T00:57:54Z.
+- Tomorrow's material: public tax wording and any documented checkout subtotal/tax/total labels; unknown fields stay unknown.
