@@ -33,3 +33,13 @@ The owner locked ToolRelief as the single direct peer. No fourth competitor will
 - Google official keyword data: empty; no estimate made.
 - Today's article material: Hostinger upfront-billing wording; IONOS promotion, one-year term, and sales-tax notice; source URLs and fetched_at 2026-10-24T00:57:54Z.
 - Tomorrow's material: public tax wording and any documented checkout subtotal/tax/total labels; unknown fields stay unknown.
+
+## 2026-10-25 shift materials
+- Archived today's visual, competitor, and source notes in reports/2026-10-25-*.md.
+- Google official keyword data: empty; no estimate made.
+- Tomorrow's material: public tax wording plus checkout subtotal/tax/total labels; unknown fields stay unknown.
+## 2026-10-26 shift materials
+- Archived today's source, competitor, and visual notes in `reports/2026-10-26-*.md`.
+- Google official keyword data: empty; no estimate made.
+- Today's article material: Hostinger upfront-billing wording, IONOS tax notice, checkout term/subtotal/tax/total fields, source URLs, fetched_at, and unknown-field rule.
+- Tomorrow's material: provider checkout evidence for recurring charge and tax treatment; use only public source wording and preserve unknown values.
