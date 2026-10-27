@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T17:45:04Z",
+  "generated_at": "2026-10-27T21:58:21Z",
   "offers": [
     {
       "provider": "Hostinger",
@@ -8,7 +8,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-10-27T17:45:04Z",
+      "fetched_at": "2026-10-27T21:58:21Z",
       "valid_until": "2027-10-27"
     },
     {
@@ -18,7 +18,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-10-27T17:45:04Z",
+      "fetched_at": "2026-10-27T21:58:21Z",
       "valid_until": "2027-10-27"
     },
     {
@@ -28,7 +28,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-10-27T17:45:04Z",
+      "fetched_at": "2026-10-27T21:58:21Z",
       "valid_until": "2027-10-27"
     },
     {
@@ -38,7 +38,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-10-27T17:45:04Z",
+      "fetched_at": "2026-10-27T21:58:21Z",
       "valid_until": "2027-10-27"
     },
     {
@@ -48,7 +48,7 @@
       "currency": "USD",
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
-      "fetched_at": "2026-10-27T17:45:04Z"
+      "fetched_at": "2026-10-27T21:58:21Z"
     },
     {
       "provider": "IONOS",
@@ -57,7 +57,7 @@
       "currency": "USD",
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
-      "fetched_at": "2026-10-27T17:45:04Z"
+      "fetched_at": "2026-10-27T21:58:21Z"
     },
     {
       "provider": "IONOS",
@@ -66,7 +66,7 @@
       "currency": "USD",
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
-      "fetched_at": "2026-10-27T17:45:04Z"
+      "fetched_at": "2026-10-27T21:58:21Z"
     },
     {
       "provider": "IONOS",
@@ -75,7 +75,7 @@
       "currency": "USD",
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
-      "fetched_at": "2026-10-27T17:45:04Z"
+      "fetched_at": "2026-10-27T21:58:21Z"
     },
     {
       "provider": "IONOS",
@@ -84,30 +84,30 @@
       "currency": "USD",
       "offer_url": "https://www.ionos.com/servers/cheap-vps",
       "source_url": "https://www.ionos.com/servers/cheap-vps",
-      "fetched_at": "2026-10-27T17:45:04Z"
+      "fetched_at": "2026-10-27T21:58:21Z"
     }
   ],
   "sources": [
     {
       "provider": "Hostinger",
       "status": "offers_found",
-      "fetched_at": "2026-10-27T17:45:04Z"
+      "fetched_at": "2026-10-27T21:58:21Z"
     },
     {
       "provider": "IONOS",
       "status": "offers_found",
-      "fetched_at": "2026-10-27T17:45:04Z"
+      "fetched_at": "2026-10-27T21:58:21Z"
     },
     {
       "provider": "Contabo",
       "status": "skipped",
       "detail": "HTTP Error 403: Forbidden",
-      "fetched_at": "2026-10-27T17:45:04Z"
+      "fetched_at": "2026-10-27T21:58:21Z"
     },
     {
       "provider": "Hetzner",
       "status": "no_structured_offers",
-      "fetched_at": "2026-10-27T17:45:04Z"
+      "fetched_at": "2026-10-27T21:58:21Z"
     }
   ]
 }
