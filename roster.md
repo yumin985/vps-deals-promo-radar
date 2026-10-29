@@ -43,3 +43,21 @@ The owner locked ToolRelief as the single direct peer. No fourth competitor will
 - Google official keyword data: empty; no estimate made.
 - Today's article material: Hostinger upfront-billing wording, IONOS tax notice, checkout term/subtotal/tax/total fields, source URLs, fetched_at, and unknown-field rule.
 - Tomorrow's material: provider checkout evidence for recurring charge and tax treatment; use only public source wording and preserve unknown values.
+
+## 2026-10-27 shift materials
+- Archived today's source, competitor, and visual notes in `reports/2026-10-27-*.md`.
+- Google official keyword data: empty; no estimate made.
+- Today's material: Hostinger upfront-payment wording, IONOS tax notice, and a field-by-field recurring-charge/tax checklist.
+- Tomorrow's material: public checkout evidence for recurring charge and tax treatment; source URL, fetched_at, and unknown-field rule remain required.
+
+## 2026-10-28 shift materials
+- Archived source, competitor, and visual notes in `reports/2026-10-28-*.md`.
+- Google official keyword data: empty; no connected official dataset and no estimate made.
+- Today's material: Hostinger's public 24-month amount-due-today plus same-term renewal label, and IONOS's public sales-tax notice; source URLs and `fetched_at` `2026-10-28T00:59:29Z`.
+- Tomorrow's material: match a published upfront amount and renewal amount only when plan, term, and currency agree; preserve source URL, fetched_at, and unknown-field rule.
+
+## 2026-10-29 shift materials
+- Archived today's source, competitor, and visual notes in `reports/2026-10-29-*.md`.
+- Google official keyword data: empty; no connected official dataset and no estimate made.
+- Today's material: Hostinger's explicit same-term 24-month payment and renewal wording; IONOS's verified 3-month promotion records without a published post-promotion amount; source URLs and `fetched_at` `2026-10-29T01:05:02Z`.
+- Tomorrow's material: capture the matching plan, currency, payment term, and renewal term from one public provider card; do not calculate or fill a missing field.

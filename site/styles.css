@@ -11,3 +11,9 @@ footer span{overflow-wrap:anywhere}
 
 @media(max-width:600px){.detail-card--wide{margin:16px 0;padding:18px}.detail-card--wide .guide-hero{margin:14px 0 22px}}
 
+/* Keep source provenance scannable without widening the reading measure. */
+.source-evidence{padding:16px 18px;margin:26px 0;background:#edf5ef;border:1px solid #d5e7db;border-radius:12px;font-size:.92rem}.source-evidence p{margin:0 0 8px}.source-evidence p:last-child{margin-bottom:0}.source-evidence a{color:var(--green);overflow-wrap:anywhere}
+
+/* A compact evidence-first comparison block keeps the four required labels scannable. */
+.match-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:20px 0 24px}.match-grid>div{padding:15px;border:1px solid var(--line);border-radius:12px;background:#fff}.match-grid strong{display:block;color:var(--green);font-size:.88rem}.match-grid span{display:block;color:var(--muted);font-size:.84rem;line-height:1.45;margin-top:5px}@media(max-width:600px){.match-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.match-grid>div{padding:12px}.match-grid span{font-size:.8rem}}
+
