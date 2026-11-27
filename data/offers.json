@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T21:11:13Z",
+  "generated_at": "2026-11-27T07:37:23Z",
   "offers": [
     {
       "provider": "Hostinger",
@@ -8,8 +8,8 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-11-26T21:11:13Z",
-      "valid_until": "2027-11-26"
+      "fetched_at": "2026-11-27T07:37:23Z",
+      "valid_until": "2027-11-27"
     },
     {
       "provider": "Hostinger",
@@ -18,8 +18,8 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-11-26T21:11:13Z",
-      "valid_until": "2027-11-26"
+      "fetched_at": "2026-11-27T07:37:23Z",
+      "valid_until": "2027-11-27"
     },
     {
       "provider": "Hostinger",
@@ -28,8 +28,8 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-11-26T21:11:13Z",
-      "valid_until": "2027-11-26"
+      "fetched_at": "2026-11-27T07:37:23Z",
+      "valid_until": "2027-11-27"
     },
     {
       "provider": "Hostinger",
@@ -38,31 +38,31 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-11-26T21:11:13Z",
-      "valid_until": "2027-11-26"
+      "fetched_at": "2026-11-27T07:37:23Z",
+      "valid_until": "2027-11-27"
     }
   ],
   "sources": [
     {
       "provider": "Hostinger",
       "status": "offers_found",
-      "fetched_at": "2026-11-26T21:11:13Z"
+      "fetched_at": "2026-11-27T07:37:23Z"
     },
     {
       "provider": "IONOS",
       "status": "no_structured_offers",
-      "fetched_at": "2026-11-26T21:11:13Z"
+      "fetched_at": "2026-11-27T07:37:23Z"
     },
     {
       "provider": "Contabo",
       "status": "skipped",
       "detail": "HTTP Error 403: Forbidden",
-      "fetched_at": "2026-11-26T21:11:13Z"
+      "fetched_at": "2026-11-27T07:37:23Z"
     },
     {
       "provider": "Hetzner",
       "status": "no_structured_offers",
-      "fetched_at": "2026-11-26T21:11:13Z"
+      "fetched_at": "2026-11-27T07:37:23Z"
     }
   ]
 }
