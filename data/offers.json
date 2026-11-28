@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:54:44Z",
+  "generated_at": "2026-11-28T07:04:41Z",
   "offers": [
     {
       "provider": "Hostinger",
@@ -8,7 +8,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-11-27T20:54:44Z",
+      "fetched_at": "2026-11-28T07:04:41Z",
       "valid_until": "2027-11-27"
     },
     {
@@ -18,7 +18,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-11-27T20:54:44Z",
+      "fetched_at": "2026-11-28T07:04:41Z",
       "valid_until": "2027-11-27"
     },
     {
@@ -28,7 +28,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-11-27T20:54:44Z",
+      "fetched_at": "2026-11-28T07:04:41Z",
       "valid_until": "2027-11-27"
     },
     {
@@ -38,7 +38,7 @@
       "currency": "USD",
       "offer_url": "https://www.hostinger.com/vps-hosting",
       "source_url": "https://www.hostinger.com/vps-hosting",
-      "fetched_at": "2026-11-27T20:54:44Z",
+      "fetched_at": "2026-11-28T07:04:41Z",
       "valid_until": "2027-11-27"
     }
   ],
@@ -46,22 +46,23 @@
     {
       "provider": "Hostinger",
       "status": "offers_found",
-      "fetched_at": "2026-11-27T20:54:44Z"
+      "fetched_at": "2026-11-28T07:04:41Z"
     },
     {
       "provider": "IONOS",
       "status": "no_structured_offers",
-      "fetched_at": "2026-11-27T20:54:44Z"
+      "fetched_at": "2026-11-28T07:04:41Z"
     },
     {
       "provider": "Contabo",
-      "status": "no_structured_offers",
-      "fetched_at": "2026-11-27T20:54:44Z"
+      "status": "skipped",
+      "detail": "HTTP Error 403: Forbidden",
+      "fetched_at": "2026-11-28T07:04:41Z"
     },
     {
       "provider": "Hetzner",
       "status": "no_structured_offers",
-      "fetched_at": "2026-11-27T20:54:44Z"
+      "fetched_at": "2026-11-28T07:04:41Z"
     }
   ]
 }
